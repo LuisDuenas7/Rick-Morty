@@ -1,6 +1,6 @@
 const LocationInfo =({name,type,dimension,residents})=>{
 
-                      //This component only show the information recibed in the location container.
+                      //This component only show the information received in the location container.
     return(
  <div className="boxLocationInfo">       
      
