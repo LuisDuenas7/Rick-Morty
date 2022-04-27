@@ -1,0 +1,288 @@
+.App {
+  text-align: center;
+  font-family: Orbitron-Bold;
+  
+ 
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.img-RM{
+  width: 20%;
+  /* position: fixed; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spinner{
+  width: border-box;
+  height: 100vh;
+  background-color:black;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  z-index: 10;
+  color:aliceblue;
+}
+
+.spinner-size{
+  width: 40%;
+}
+
+/* ==================================Fonts============================================================================ */
+@font-face {
+  font-family: PermanentMarker-Regular;
+  src: url(/src/fonts/PermanentMarker-Regular.ttf) format('truetype');
+  font-style: normal;
+  
+} 
+
+
+@font-face {
+  font-family: Orbitron-Regular;
+  src: url(/src/fonts/Orbitron-Regular.ttf) format('truetype');
+  font-style: normal;
+  
+} 
+
+@font-face {
+  font-family: Orbitron-Bold;
+  src: url(/src/fonts/Orbitron-Bold.ttf) format('truetype');
+  font-style: normal;
+  
+}
+
+/*=====================Search&Input==============================*/
+.searchBox{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:2% ;
+  position: relative;
+  /* position:fixed;  z-index:999999; */
+}
+
+input{
+  background-color: #282c34a0;
+  color: antiquewhite;
+  text-align: center;
+  font-family: Orbitron-Bold;
+  border: none;
+  
+  padding: 5px;
+  border-radius: 12px;
+  box-shadow: rgba(2, 15, 115, 0.327) 5px 5px 4px, rgba(7, 30, 144, 0.3) 5px 10px 10px, rgba(41, 62, 199, 0.2) 5px 15px 15px, rgba(46, 56, 240, 0.102) 5px 20px 20px, rgba(240, 46, 170, 0.05) 5px 25px 25px;
+}
+
+button{
+  border: none;
+  background-color: #0c2e7380;
+  color: rgba(250, 235, 215, 0.619);
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  font-family: Orbitron-Bold;
+  
+}
+
+button:hover{
+  border: none;
+  background-color: #1a397880;
+  color: rgba(250, 235, 215, 0.878);
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  
+}
+
+
+
+/*==============================LocationInfo================================*/
+
+
+
+.locationInfo{
+  display: flex;
+  flex-direction: row;
+  margin-left: 32%;
+  gap:1%;
+  font-family: Orbitron-Bold;
+  color: #c7c7f8;
+  
+}
+
+.tituleName{
+  color: rgba(250, 235, 215, 0.857);
+  font-family: Orbitron-Bold ;
+}
+
+
+
+
+/*===============================ResidentInfo=======================================*/
+.boxMainResidents{
+
+  /* border: 1px solid rgba(255, 255, 255, 0.048); */
+  width: 42%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ margin-bottom: 10px;
+
+}
+
+.boxResident{
+  display: flex;
+  /* border:1px solid white; */
+  flex-direction: row;
+  margin-top: 10px;
+  max-height:30vh;
+  width: 100%;                          
+  border-radius: 12px;
+  position: relative;
+  background-color: #5688ec3e;
+  backdrop-filter: blur(50%);
+  padding: 2px;
+  box-shadow: rgba(2, 15, 115, 0.327) 5px 5px 4px, rgba(7, 30, 144, 0.3) 5px 10px 10px, rgba(41, 62, 199, 0.2) 5px 15px 15px, rgba(46, 56, 240, 0.102) 5px 20px 20px, rgba(240, 46, 170, 0.05) 5px 25px 25px;
+  }
+
+.imgResident{
+  /* border:1px solid white; */
+  width: 50%;
+  height: 100%;
+  border-radius: 12px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.imgRes{
+ width: 60%;
+  height: 30%;
+  border-radius: 10px;
+  margin-top: 5px;
+  
+}
+
+.boxResidentInfo{
+  /* border:1px solid rgba(255, 255, 255, 0.075); */
+  width: 50%;
+  max-height: 100%;
+  border-radius: 12px;
+  color: rgb(185, 167, 203);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items:center;
+  font-size:10px;
+  padding: 3px;
+  position: relative;
+}
+
+span{
+  color: #282c34;
+}
+.statusRow{
+  display:flex;
+  flex-direction: row;
+  gap: 2px;
+  padding: 3px;
+}
+
+.blink{
+  animation: blink 1.2s linear infinite;
+
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }}
+
+  span{
+    color:rgba(240, 247, 247, 0.68);
+  }
+
+  .color-text{
+
+  color:rgba(240, 247, 247, 0.68);
+  font-weight: 800;
+  
+  font-size: medium;
+
+ 
+  }
+
+  .text-shadow{
+
+  
+
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+  
+   
+    }
+
+    .column-resident{
+      display: flex;
+    flex-wrap: wrap;
+    margin-bottom:35px;
+    }
+
+
+    /* ===================================================Footer================================================ */
+
+    .footer{
+      display:flex;
+      padding: 5px;
+      width:100%;
+      
+      background-color: #282c34;
+      align-items:flex-end;
+      color: rgb(165, 255, 127);
+      justify-content: center;
+      position:fixed; bottom:0;
+       
+    }
