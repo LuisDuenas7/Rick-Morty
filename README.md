@@ -6,7 +6,7 @@
 > 
 
 
-### ✨ [Demo](https://rickandmorty-ld7.netlify.app/)
+### ✨ [Demo](https://rickmorty-ld7.netlify.app/)
 
 ## Install
 
